@@ -7,29 +7,23 @@
 <body>
 
 <header>
-
 	<h1>LOGOTIPO</h1>
-
 </header>
 
-<nav>
-	<ul>
-		<li><a href="">INICIO</a></li>
-
-		<li><a href="">nosotros</a></li>
-
-		<li><a href="">Servicios</a></li>
-
-		<li><a href="">Contacto</a></li>
-	</ul>
-</nav>
+<?php
+	include "modules/navegacion.php";
+?>
 
 <section>
-	
-	<h1>PAGINA DE INICIO</h1>
+
+<?php
+
+$mvc = new MvcController();
+$mvc -> enlacesPaginasController();	
+
+?>
 
 </section>
-
 
 </body>
 </html>
